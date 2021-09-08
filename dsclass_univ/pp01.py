@@ -27,8 +27,8 @@ class Matrix:
             for j in range(len(self.A[0])):
                 result.A[i][j] = self.A[i][j]+other.A[i][j]
         return result
+    
     # 2. 뺄셈
-
     def __sub__(self, other):
         result = Matrix(0, 0, 0, 0)
         for i in range(len(self.A)):
